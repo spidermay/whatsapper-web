@@ -31,6 +31,10 @@ Copyright © All rights Reserved
 /* GLOBAL
 ----------------------*/
 
+.logo{
+    max-height: 50px;
+}
+
 body {
     font-family: 'Rubik', sans-serif;
     position: relative;
