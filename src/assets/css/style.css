@@ -30,6 +30,10 @@ Copyright © All rights Reserved
 
 /* GLOBAL
 ----------------------*/
+:root {
+    --color-theme: #0094cd;
+    --color-theme-shadow: #090b74cc;
+  }
 
 .logo{
     max-height: 50px;
@@ -41,12 +45,12 @@ body {
 }
 
 a {
-    color: rgb(0, 148, 205);
+    color: var(--color-theme);
 }
 
 a:hover,
 a:focus {
-    color: #d6619c;
+    color: var(--color-theme);
 }
 
 h1 {
@@ -88,12 +92,12 @@ p {
 }
 
 p.lead {
-    color: rgb(0, 148, 205);
+    color: var(--color-theme);
     margin-bottom: 2rem;
 }
 
 .text-primary {
-    color: rgb(0, 148, 205) !important;
+    color: var(--color-theme) !important;
 }
 
 .light-font {
@@ -109,15 +113,15 @@ p.lead {
 }
 
 .btn-outline-light:hover {
-    color: #d6619c;
+    color: var(--color-theme);
 }
 
 .btn-primary {
     border-radius: 3px;
-    background-image: -moz-linear-gradient( 122deg, rgb(0, 148, 205) 0%, rgba(9, 11, 116, 0.8) 100%);
-    background-image: -webkit-linear-gradient( 122deg, rgb(0, 148, 205) 0%, rgba(9, 11, 116, 0.8) 100%);
-    background-image: -ms-linear-gradient( 122deg, rgb(0, 148, 205) 0%, rgba(9, 11, 116, 0.8) 100%);
-    background-image: linear-gradient( 122deg, rgb(0, 148, 205) 0%, rgba(9, 11, 116, 0.8) 100%);
+    background-image: -moz-linear-gradient( 122deg, var(--color-theme) 0%, var(--color-theme-shadow) 100%);
+    background-image: -webkit-linear-gradient( 122deg, var(--color-theme) 0%, var(--color-theme-shadow) 100%);
+    background-image: -ms-linear-gradient( 122deg, var(--color-theme) 0%, var(--color-theme-shadow) 100%);
+    background-image: linear-gradient( 122deg, var(--color-theme) 0%, var(--color-theme-shadow) 100%);
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.2);
     font-weight: 500;
     padding: 0.6rem 2rem;
@@ -130,7 +134,7 @@ p.lead {
 .btn-primary:not([disabled]):not(.disabled).active,
 .btn-primary:not([disabled]):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
-    background-image: linear-gradient( 122deg, rgba(9, 11, 116, 0.8) 0%, rgb(0, 148, 205) 100%);
+    background-image: linear-gradient( 122deg, var(--color-theme-shadow) 0%, var(--color-theme) 100%);
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.3);
     color: #FFF;
 }
@@ -190,10 +194,10 @@ p.lead {
 
 .nav-menu.is-scrolling,
 .nav-menu.menu-is-open {
-    background-color: rgba(9, 11, 116, 0.8);
-    background: -moz-linear-gradient(135deg, rgba(9, 11, 116, 0.8) 0%, rgb(0, 148, 205) 100%);
-    background: -webkit-linear-gradient(135deg, rgba(9, 11, 116, 0.8) 0%, rgb(0, 148, 205) 100%);
-    background: linear-gradient(135deg, rgba(9, 11, 116, 0.8) 0%, rgb(0, 148, 205) 100%);
+    background-color: var(--color-theme-shadow);
+    background: -moz-linear-gradient(135deg, var(--color-theme-shadow) 0%, var(--color-theme) 100%);
+    background: -webkit-linear-gradient(135deg, var(--color-theme-shadow) 0%, var(--color-theme) 100%);
+    background: linear-gradient(135deg, var(--color-theme-shadow) 0%, var(--color-theme) 100%);
     -webkit-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
@@ -215,7 +219,7 @@ p.lead {
     }
     .navbar-nav>.nav-item>.nav-link.active:after {
         content: "";
-        border-bottom: 2px solid #0077ff;
+        border-bottom: 2px solid var(--color-theme);
         left: 1rem;
         right: 1rem;
         bottom: 5px;
@@ -244,10 +248,10 @@ header {
 }
 
 .bg-gradient {
-    background-image: -moz-linear-gradient( 135deg, rgba(9, 11, 116, 0.8) 0%, rgb(0, 148, 205) 100%);
-    background-image: -webkit-linear-gradient( 135deg, rgba(9, 11, 116, 0.8) 0%, rgb(0, 148, 205) 100%);
-    background-image: -ms-linear-gradient( 135deg, rgba(9, 11, 116, 0.8) 0%, rgb(0, 148, 205) 100%);
-    background-image: linear-gradient( 135deg, rgba(9, 11, 116, 0.8) 0%, rgb(0, 148, 205) 100%);
+    background-image: -moz-linear-gradient( 135deg, var(--color-theme-shadow) 0%, var(--color-theme) 100%);
+    background-image: -webkit-linear-gradient( 135deg, var(--color-theme-shadow) 0%, var(--color-theme) 100%);
+    background-image: -ms-linear-gradient( 135deg, var(--color-theme-shadow) 0%, var(--color-theme) 100%);
+    background-image: linear-gradient( 135deg, var(--color-theme-shadow) 0%, var(--color-theme) 100%);
 }
 
 .tagline {
@@ -350,7 +354,7 @@ header {
     border-radius: 50%;
     margin-bottom: 1.5rem;
     background-color: #FFF;
-    color: rgb(0, 148, 205);
+    color: var(--color-theme);
     font-size: 48px;
     text-align: center;
     line-height: 80px;
@@ -368,10 +372,10 @@ header {
 }
 
 .ui-steps li:hover .circle-icon {
-    background-image: -moz-linear-gradient( 122deg, #090b74cc 0%, #0094cd 100%);
-    background-image: -webkit-linear-gradient( 122deg, #090b74cc 0%, #0094cd 100%);
-    background-image: -ms-linear-gradient( 122deg, #090b74cc 0%, #0094cd 100%);
-    background-image: linear-gradient( 122deg, #090b74cc 0%, #0094cd 100%);
+    background-image: -moz-linear-gradient( 122deg, var(--color-theme-shadow) 0%, var(--color-theme) 100%);
+    background-image: -webkit-linear-gradient( 122deg, var(--color-theme-shadow) 0%, var(--color-theme) 100%);
+    background-image: -ms-linear-gradient( 122deg, var(--color-theme-shadow) 0%, var(--color-theme) 100%);
+    background-image: linear-gradient( 122deg, var(--color-theme-shadow) 0%, var(--color-theme) 100%);
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.09);
     color: #FFF;
 }
@@ -539,7 +543,7 @@ header {
 
 .card.pricing.popular {
     border-top-width: 3px;
-    border-color: #ce75b4 #faf6fb #FFF;
+    border-color: var(--color-theme) #faf6fb #FFF;
     box-shadow: 0px 12px 59px 0px rgba(36, 7, 31, 0.11);
     color: #633991;
 }
@@ -629,13 +633,13 @@ header {
     line-height: 50px;
     margin: 0 0.3rem;
     border-radius: 5px;
-    color: rgb(0, 148, 205);
+    color: var(--color-theme);
     transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
     text-decoration: none;
-    color: rgb(0, 148, 205);
+    color: var(--color-theme);
 }
 
 @media (max-width:991px) {
